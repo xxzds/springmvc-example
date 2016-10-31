@@ -6,6 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>springmvc-chapter1</module>
+  	<module>springmvc-chapter2</module>
   </modules>
   
   <build>
