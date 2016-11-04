@@ -9,6 +9,8 @@
   	<module>springmvc-chapter2</module>
   	<module>spring-chapter3</module>
   	<module>springmvc-chapter3</module>
+  	<module>spring-chapter4</module>
+  	<module>springmvc-chapter4</module>
   </modules>
   
   <build>
