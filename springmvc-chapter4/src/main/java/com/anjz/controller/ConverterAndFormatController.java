@@ -27,7 +27,6 @@ public class ConverterAndFormatController {
 	
 	@RequestMapping(value="testform",method=RequestMethod.GET)
 	public String totTestForm(Model model){
-		
 		if(!model.containsAttribute("user")){
 			model.addAttribute("user", new User());
 		}
@@ -38,7 +37,12 @@ public class ConverterAndFormatController {
 	
 	@RequestMapping(value="testform",method=RequestMethod.POST)
 	public String testForm(@ModelAttribute User user,BindingResult bindingResult,Model model){
-		if(bindingResult.hasErrors()){			
+		if(bindingResult.hasErrors()){	
+			
+			//全局错误
+			bindingResult.reject("1001", null, "测试全局错误");
+			
+			
 			return totTestForm(model);
 		}
 		

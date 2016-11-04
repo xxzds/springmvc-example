@@ -5,7 +5,6 @@ import java.util.Date;
 import com.anjz.support.formatter.DateCusm;
 
 public class User {
-
 	private String username;
 	private String password;
 	
