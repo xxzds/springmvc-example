@@ -38,7 +38,7 @@ public class ConverterAndFormatController {
 	@RequestMapping(value="testform",method=RequestMethod.POST)
 	public String testForm(@ModelAttribute User user,BindingResult bindingResult,Model model){
 		if(bindingResult.hasErrors()){	
-			
+//			DefaultMessageCodesResolver
 			//全局错误
 			bindingResult.reject("1001", null, "测试全局错误");
 			

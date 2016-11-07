@@ -26,12 +26,20 @@
  	        </list>
  	    </property>
  	</bean>
+
+	<!-- 配置消息资源 -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="classpath:messages" />
+		<property name="fileEncodings" value="utf-8" />
+		<property name="cacheSeconds" value="120" />
+	</bean>
  	
  	
  	<!-- 以下 validator  ConversionService 在使用 mvc:annotation-driven 会 自动注册-->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
         <property name="providerClass"  value="org.hibernate.validator.HibernateValidator"/>
-        <!-- 如果不加默认到 使用classpath下的 ValidationMessages.properties -->       
+        <!-- 如果不加默认到 使用classpath下的 ValidationMessages.properties -->   
+<!--         <property name="validationMessageSource" ref="messageSource"/>     -->
     </bean>
 	
  	<!-- ②使用ConfigurableWebBindingInitializer注册conversionService -->
