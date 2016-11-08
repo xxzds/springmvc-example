@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <display-name>springmvc-chapter2</display-name>
+  <display-name>springmvc-chapter4</display-name>
  
 <!--  	<context-param> -->
 <!-- 		<param-name>contextConfigLocation</param-name> -->
 <!-- 		<param-value> -->
-<!-- 			classpath:spring-common-config.xml, -->
-<!-- 			classpath:spring-budget-config.xml -->
+<!-- 			classpath:spring/spring.xml, -->
+<!-- 			classpath:spring/spring-mybatis.xml -->
 <!-- 		</param-value> -->
 <!-- 	</context-param> -->
 	
 <!-- 	<listener> -->
 <!-- 	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> -->
-<!-- 	</listener> -->
+	</listener>
  	 <!-- 编码拦截器 -->
  	 <filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
